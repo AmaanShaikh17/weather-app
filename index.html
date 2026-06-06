@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .weather-card {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      #weatherIcon {
+        width: 100px;
+        height: 100px;
+      }
+
+      #temperature {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      #description {
+        text-transform: capitalize;
+        color: #6c757d;
+        font-size: 1.1rem;
+      }
+
+      .app-title {
+        font-weight: 700;
+        color: #0d6efd;
+      }
+
+      .search-btn {
+        min-width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card weather-card p-4">
+      <div class="text-center mb-4">
+        <h1 class="app-title">🌤 Weather App</h1>
+        <p class="text-muted mb-0">Check real-time weather for any city</p>
+      </div>
+
+      <div class="input-group mb-4">
+        <input
+          type="text"
+          id="cityInput"
+          class="form-control form-control-lg"
+          placeholder="Enter city name"
+        />
+
+        <button id="searchBtn" class="btn btn-primary search-btn">
+          Search
+        </button>
+      </div>
+
+      <div id="weatherResult" class="text-center">
+        <img
+          id="weatherIcon"
+          src="./image/weather-app.png "
+          alt="Weather Icon"
+        />
+
+        <h2 id="temperature" class="mt-2"></h2>
+
+        <p id="description"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
