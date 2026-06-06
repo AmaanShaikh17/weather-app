@@ -21,6 +21,7 @@ A responsive weather application built using HTML, JavaScript, Bootstrap, and Op
 ## Screenshot
 
 ![Weather App](screenshots/weatherapp-snapshot-1.png)
+![Weather App](screenshots/weatherapp-snapshot-2.png)
 
 ## Future Improvements
 
